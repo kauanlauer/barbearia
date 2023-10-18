@@ -1,3 +1,31 @@
+/* Adaptações para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+    body {
+        justify-content: flex-start; /* Alinhe o conteúdo no início da página */
+    }
+    .container {
+        width: 90%; /* Reduza a largura do contêiner */
+    }
+    .form-container {
+        width: 100%; /* Expanda o formulário para preencher a largura da tela */
+    }
+    .form-title {
+        font-size: 20px; /* Reduza o tamanho do título do formulário */
+    }
+    .input-field {
+        font-size: 14px; /* Reduza o tamanho da fonte dos campos de entrada */
+    }
+    .btn-primary {
+        padding: 10px 20px; /* Reduza o preenchimento do botão */
+        font-size: 14px; /* Reduza o tamanho da fonte do botão */
+    }
+    .form-link {
+        font-size: 12px; /* Reduza o tamanho da fonte dos links */
+    }
+    .feedback-message {
+        font-size: 14px; /* Reduza o tamanho da fonte das mensagens de feedback */
+    }
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
