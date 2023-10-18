@@ -1,6 +1,6 @@
 /* Estilize o cabeçalho (header) */
 .header {
-    background-image: url('background.jpg'); /* Adicione o caminho da imagem de fundo desejada */
+    background-image: url('background.jpg'); /* Substitua 'background.jpg' pelo caminho da sua imagem de fundo */
     background-size: cover;
     background-position: center;
     color: #fff; /* Texto branco */
@@ -11,7 +11,8 @@
 .navbar {
     background-color: #000000; /* Fundo preto */
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Alinhe os links uniformemente na barra de navegação */
+    align-items: center; /* Alinhe verticalmente ao centro */
     padding: 10px 0;
     position: fixed;
     top: 0;
@@ -22,7 +23,6 @@
 .navbar a {
     color: #ffffff; /* Texto branco */
     text-decoration: none;
-    margin: 0 20px;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
@@ -30,6 +30,11 @@
 
 .navbar a:hover {
     color: #ffa500; /* Cor para realçar ao passar o mouse */
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
 }
 
 .hero-title {
@@ -57,3 +62,92 @@
 }
 
 /* Estilize as outras seções e o rodapé conforme necessário */
+.section {
+    padding: 60px 0;
+}
+
+.barbeiro {
+    text-align: center;
+    margin: 20px;
+}
+
+.barbeiro img {
+    max-width: 100%;
+    border-radius: 50%; /* Arredonde a imagem do barbeiro */
+}
+
+.barbeiro h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.barbeiro p {
+    font-size: 16px;
+}
+
+.lista-servicos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-servicos li {
+    margin-bottom: 20px;
+}
+
+.lista-servicos h3 {
+    font-size: 24px;
+}
+
+.lista-servicos p {
+    font-size: 16px;
+}
+
+.lista-precos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-precos li {
+    margin-bottom: 20px;
+}
+
+.lista-precos h3 {
+    font-size: 24px;
+}
+
+.lista-precos p {
+    font-size: 16px;
+}
+
+.informacoes-contato {
+    text-align: center;
+}
+
+.informacoes-contato p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Estilos para tornar o site responsivo em smartphones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Empilhe os links na versão mobile */
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Adicione espaçamento entre os links */
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+}
