@@ -9,14 +9,7 @@ body {
     min-height: 100vh; /* Use 'min-height' para manter a página centralizada mesmo quando o conteúdo é longo. */
 }
 
-.container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 350px;
-    padding: 5px;
-}
+
 
 /* ... Seu CSS existente ... */
 
@@ -106,4 +99,18 @@ body {
 
 .btn-link:hover {
     color: #2972f6;
+}
+.feedback-container {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.feedback-message {
+    color: #000; /* Texto preto */
+    font-weight: bold; /* Texto em negrito */
 }

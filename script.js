@@ -32,11 +32,14 @@ function showMessage(message, success) {
     feedbackDiv.style.display = 'block';
     
     if (success) {
-        feedbackDiv.style.backgroundColor = '#4CAF50'; // Cor de fundo verde para mensagens de sucesso
+        feedbackDiv.style.backgroundColor = '#ffffff'; // Fundo branco para mensagens de sucesso
+        messageDiv.style.color = '#000000'; // Texto preto para mensagens de sucesso
     } else {
         feedbackDiv.style.backgroundColor = '#f44336'; // Cor de fundo vermelho para mensagens de erro
+        messageDiv.style.color = '#000000'; // Texto preto para mensagens de erro
     }
 }
+
 
 function register() {
     const email = document.getElementById('registrationEmail').value;
