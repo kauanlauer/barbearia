@@ -60,7 +60,6 @@ function register() {
         });
 }
 
-// Função para fazer login
 function login() {
     const email = document.getElementById('loginEmail').value;
     const password = document.getElementById('loginPassword').value;
@@ -74,6 +73,9 @@ function login() {
             // Login bem-sucedido
             const user = userCredential.user;
             showMessage('Login bem-sucedido. Bem-vindo, ' + user.email + '!', true);
+
+            // Redirecionar o usuário para a página principal (substitua 'pagina-principal.html' pelo URL desejado)
+            window.location.href = 'inicio.html';
         })
         .catch((error) => {
             // Lidar com erros de login
@@ -82,6 +84,7 @@ function login() {
             showMessage('Erro de login: ' + errorMessage, false);
         });
 }
+
 // Função para redefinir a senha
 function resetPassword() {
     const email = document.getElementById('resetPasswordEmail').value;
